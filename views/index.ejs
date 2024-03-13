@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-gray-100">
+      <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+          <h1 class="text-xl font-semibold mb-4">Send Email</h1>
+          <p class="text-gray-600 mb-6">
+            Change the email address you want associated with your account.
+          </p>
+          <form action="/send-email">
+            <div class="mb-4">
+              <input 
+              name="to"
+                type="email"
+                placeholder="To Email : you@example.com"
+                class="email-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:border-blue-500"
+              />
+            </div>
+            <!-- <div class="mb-4">
+              <input 
+              name="from"
+                type="email"
+                placeholder="from Email: you@example.com"
+                class="email-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:border-blue-500"
+              />
+            </div> -->
+            <div class="mb-4">
+              <input 
+              name="text"
+                type="text"
+                placeholder="Text"
+                class="email-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:border-blue-500"
+              />
+            </div>
+            <div class="mb-4">
+              <input 
+              name="subject"
+                type="text"
+                placeholder="Subject"
+                class="email-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:border-blue-500"
+              />
+            </div>
+            <button
+              class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
